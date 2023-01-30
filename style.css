@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+/*nav res*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: #350371;
+    line-height: 75px;
+    padding: 0px 80px;
+}
+
+nav ul{
+    float: left;
+    text-align: center;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+}
+nav ul li a:hover{
+  
+    background-color: #ffffff;
+    color: black;
+    color: rgb(11, 10, 10);
+    border-radius: red;
+}
+nav ul .active{
+    color: #000000;
+}
+.checkbtn{
+    color: #fff;font-size: 25px;
+    cursor: pointer;
+    float: right;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media screen and (max-width: 990px){
+    nav{
+        padding: 0px 50px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    nav .logo p{
+        font-size: 30px;
+
+    }
+    nav ul{
+        width: 50%;
+        height: 100vh;
+        background-color: #350371;
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        text-align: center;
+        transition: 0.4s ease;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 60px 0px;
+        line-height: 20px;
+    
+        
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+}
+/*topnav*/
+
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+.fakeimage {
+  background-color: rgb(250, 244, 244);
+  width: 100%;
+  padding: 30px;
+}
+
+.card {
+  background-color: #f5f4f4;
+  padding: 30px;
+  margin-top: px;
+}
+
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+
+}
+ .textwidget {
+  /* color: #a2a2a2; */
+  color: #fff;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(118, 84, 84);
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
